@@ -1,15 +1,11 @@
-//Test Commit
+
 package application;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
@@ -173,8 +169,7 @@ public class SampleController {
 		    }
 		    TextIn.clear();
 		    count++;
-		    CheckWord(w); // CHECKS WORD TO SET THE CORRECT COLORS
-		    Keyboard(w);
+		    CheckWord(w);
 		}
     			
     	// If You Win
@@ -213,37 +208,21 @@ public class SampleController {
         		{S40, S41, S42, S43, S44}, 
         		{S50, S51, S52, S53, S54}};
         
-        //Text[][] KeyboardArray = {
-        
-        for(int i = 0; i < guess.length(); i++) {
+    	Rectangle[] RectKeyArray = {RA, RB, RC, RD, RE, RF, RG, RH, RI, RJ, RK, RL, RM, RN, RO, RP, RQ, RR, RS, RT, RU, RV, RW, RX, RY, RZ};
+
+    	for(int i = 0; i < guess.length(); i++) {
          	 if(Word.charAt(i) == guess.charAt(i)) {
          	    colorChangeGreen(RectArray[count-1][i]);
+         	    colorChangeGreen(RectKeyArray[guess.charAt(i)-65]);
          	} else if (Word.contains(String.valueOf(guess.charAt(i)))) {
            	    colorChangeYellow(RectArray[count-1][i]);
+           	    colorChangeYellow(RectKeyArray[guess.charAt(i)-65]);
          	} else {
          		colorChangeGrey(RectArray[count-1][i]);
          	}
         }
     }
-    
-    @FXML
-    void Keyboard (String guess) {
-    	Text[][] keyArray = {
-    		    {LQ, LW, LE, LR, LT, LY, LU, LI, LO, LP},
-    		    {LA, LS, LD, LF, LG, LH, LJ, LK, LL},
-    		    {LZ, LX, LC, LV, LB, LN, LM}};
-    	
-    	for(int i = 0; i < guess.length(); i++) {
-        	 if(Word.charAt(i) == guess.charAt(i)) {
-        		 //colorChangeGreen(RectArray[count-1][i]);
-        		 colorChangeGreen(RQ);
-        	} else if (Word.contains(String.valueOf(guess.charAt(i)))) {
-          	    //colorChangeYellow(RectArray[count-1][i]);
-        	} else {
-        		//colorChangeGrey(RectArray[count-1][i]);
-        	}
-       }
-    }
+
     
     @FXML
     void PlayAgain(ActionEvent event) {
@@ -275,6 +254,11 @@ public class SampleController {
     			{L40, L41, L42, L43, L44},
     			{L50, L51, L52, L53, L54}};
     	
+    	Rectangle[] RectKeyArray = {RA, RB, RC, RD, RE, RF, RG, RH, RI, RJ, RK, RL, RM, RN, RO, RP, RQ, RR, RS, RT, RU, RV, RW, RX, RY, RZ};
+
+    	for(int i = 0; i < RectKeyArray.length; i++){
+    		colorReset(RectKeyArray[i]);
+    	}
     	for(int x = 0; x < TextArray.length; x++) {
         	for(int y = 0; y < TextArray.length; y++) {
         		TextArray[y][x].setText("");
@@ -290,44 +274,163 @@ public class SampleController {
     }
     
     @FXML
+    void AButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("A");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void BButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("B");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void CButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("C");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void DButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("D");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void EButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("E");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void FButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("F");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void GButton(ActionEvent aevent) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("G");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void HButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("H");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void IButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("I");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void JButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("J");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void KButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("K");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void LButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("L");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void MButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("M");
+    	TextIn.setText(sb.toString());
+    }
+    @FXML
+    void NButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("N");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void OButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("O");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void PButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("P");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
     void QButton(ActionEvent event) {
-    	if (LP instanceof Text) {
-    		
-    	}
-    	//StringBuilder aa = new StringBuilder(this.get())
     	StringBuilder sb = new StringBuilder(TextIn.getText());
     	sb.append("Q");
     	TextIn.setText(sb.toString());
-    	//TextIn.setText(LP.get);
-    }
-   
+    }    
     @FXML
-    void addA(ActionEvent event) {
+    void RButton(ActionEvent event) {
     	StringBuilder sb = new StringBuilder(TextIn.getText());
-    	sb.append("a");
+    	sb.append("R");
     	TextIn.setText(sb.toString());
-    	b.setOnKeyPressed(new EventHandler<KeyEvent>() {
-			@Override
-			public void handle(KeyEvent event) {
-			if (event.getCode() == KeyCode.UP) {
-				b.setId(b.getId());
-				} else if (event.getCode() == KeyCode.DOWN) {
-				b.setId(b.getId());
-				} else if (event.getCode() == KeyCode.LEFT) {
-				b.setId(b.getId());
-				} else if (event.getCode() == KeyCode.RIGHT) {
-				b.setId(b.getId()+2);
-				} 
-			}
-		});
-    	b.setOnAction(new EventHandler<KeyEvent>90)() {
-    		
-    	};
-    }
-    
-   
+    }    
     @FXML
-    Button b;
+    void SButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("S");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void TButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("T");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void UButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("U");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void VButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("V");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void WButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("W");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void XButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("X");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void YButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("Y");
+    	TextIn.setText(sb.toString());
+    }    
+    @FXML
+    void ZButton(ActionEvent event) {
+    	StringBuilder sb = new StringBuilder(TextIn.getText());
+    	sb.append("Z");
+    	TextIn.setText(sb.toString());
+    }
+   
+
     
 
 }

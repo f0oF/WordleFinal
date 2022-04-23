@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 <BorderPane prefHeight="572.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
-   <bottom>
+   <top>
       <AnchorPane prefHeight="752.0" prefWidth="802.0" BorderPane.alignment="CENTER">
          <children>
             <Text fx:id="textOut" layoutX="179.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a Word:">
@@ -281,44 +281,43 @@
                   <Font size="18.0" />
                </font>
             </Text>
-            <Button layoutX="245.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="q" />
-            <Button layoutX="270.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="w" />
-            <Button layoutX="298.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="e" />
-            <Button layoutX="325.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="r" />
-            <Button layoutX="352.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="t" />
-            <Button layoutX="376.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="y" />
-            <Button layoutX="402.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="u" />
-            <Button layoutX="426.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="i" />
-            <Button layoutX="450.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="o" />
-            <Button layoutX="476.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="p" />
-            <Button layoutX="255.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="a" />
-            <Button layoutX="282.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="s" />
-            <Button layoutX="308.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="d" />
-            <Button layoutX="332.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="f" />
-            <Button layoutX="358.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="g" />
-            <Button layoutX="384.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="h" />
-            <Button layoutX="410.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="j" />
-            <Button layoutX="434.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="k" />
-            <Button layoutX="458.0" layoutY="640.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="l" />
-            <Button layoutX="266.0" layoutY="675.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="z" />
-            <Button layoutX="291.0" layoutY="675.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="x" />
-            <Button layoutX="317.0" layoutY="675.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="c" />
-            <Button layoutX="345.0" layoutY="675.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="v" />
-            <Button layoutX="370.0" layoutY="675.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="b" />
-            <Button layoutX="397.0" layoutY="675.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="n" />
-            <Button layoutX="424.0" layoutY="675.0" mnemonicParsing="false" onAction="#QButton" prefHeight="29.0" prefWidth="21.0" text="m" />
-            <Button layoutX="34.0" layoutY="60.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="76.0" text="Dark Mode" />
-            <Text layoutX="619.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Streaks" underline="true">
+            <Button layoutX="245.0" layoutY="605.0" mnemonicParsing="false" onAction="#QButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="q" />
+            <Button layoutX="270.0" layoutY="605.0" mnemonicParsing="false" onAction="#WButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="w" />
+            <Button layoutX="298.0" layoutY="605.0" mnemonicParsing="false" onAction="#EButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="e" />
+            <Button layoutX="325.0" layoutY="605.0" mnemonicParsing="false" onAction="#RButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="r" />
+            <Button layoutX="352.0" layoutY="605.0" mnemonicParsing="false" onAction="#TButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="t" />
+            <Button layoutX="376.0" layoutY="605.0" mnemonicParsing="false" onAction="#YButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="y" />
+            <Button layoutX="402.0" layoutY="605.0" mnemonicParsing="false" onAction="#UButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="u" />
+            <Button layoutX="426.0" layoutY="605.0" mnemonicParsing="false" onAction="#IButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="i" />
+            <Button layoutX="450.0" layoutY="605.0" mnemonicParsing="false" onAction="#OButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="o" />
+            <Button layoutX="476.0" layoutY="605.0" mnemonicParsing="false" onAction="#PButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="p" />
+            <Button layoutX="255.0" layoutY="640.0" mnemonicParsing="false" onAction="#AButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="a" />
+            <Button layoutX="282.0" layoutY="640.0" mnemonicParsing="false" onAction="#SButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="s" />
+            <Button layoutX="308.0" layoutY="640.0" mnemonicParsing="false" onAction="#DButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="d" />
+            <Button layoutX="332.0" layoutY="640.0" mnemonicParsing="false" onAction="#FButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="f" />
+            <Button layoutX="358.0" layoutY="640.0" mnemonicParsing="false" onAction="#GButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="g" />
+            <Button layoutX="384.0" layoutY="640.0" mnemonicParsing="false" onAction="#HButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="h" />
+            <Button layoutX="410.0" layoutY="640.0" mnemonicParsing="false" onAction="#JButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="j" />
+            <Button layoutX="434.0" layoutY="640.0" mnemonicParsing="false" onAction="#KButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="k" />
+            <Button layoutX="458.0" layoutY="640.0" mnemonicParsing="false" onAction="#LButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="l" />
+            <Button layoutX="266.0" layoutY="675.0" mnemonicParsing="false" onAction="#ZButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="z" />
+            <Button layoutX="291.0" layoutY="675.0" mnemonicParsing="false" onAction="#XButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="x" />
+            <Button layoutX="317.0" layoutY="675.0" mnemonicParsing="false" onAction="#CButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="c" />
+            <Button layoutX="345.0" layoutY="675.0" mnemonicParsing="false" onAction="#VButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="v" />
+            <Button layoutX="370.0" layoutY="675.0" mnemonicParsing="false" onAction="#BButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="b" />
+            <Button layoutX="397.0" layoutY="675.0" mnemonicParsing="false" onAction="#NButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="n" />
+            <Button layoutX="424.0" layoutY="675.0" mnemonicParsing="false" onAction="#MButton" opacity="0.0" prefHeight="29.0" prefWidth="21.0" text="m" />
+            <Text layoutX="619.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Streak" underline="true">
                <font>
                   <Font size="19.0" />
                </font>
             </Text>
-            <Text fx:id="Streak" layoutX="634.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="15.824951171875">
+            <Text fx:id="Streak" layoutX="637.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="15.824951171875">
                <font>
                   <Font size="20.0" />
                </font>
             </Text>
          </children>
       </AnchorPane>
-   </bottom>
+   </top>
 </BorderPane>
